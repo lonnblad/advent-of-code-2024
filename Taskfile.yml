@@ -1,0 +1,10 @@
+version: "3"
+
+tasks:
+  create:
+    desc: "Create a new day folder"
+    vars:
+      DAY: '{{.DAY| default "N"}}'
+    cmds:
+      - cp -r dayN day{{.DAY}}
+      - find ./day{{.DAY}} -type f | xargs sed -i '' -e 's/dayN/day{{.DAY}}/g'
