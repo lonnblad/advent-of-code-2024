@@ -5,8 +5,6 @@ import "strings"
 func B(input string) (_ int, err error) {
 	rows := strings.Split(input, "\n")
 
-	// re := regexp.MustCompile(`X.*M.*A.*S`)
-
 	matrix := make([][]string, len(rows))
 
 	for idx, row := range rows {

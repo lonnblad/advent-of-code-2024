@@ -22,7 +22,7 @@ func Test_A_Example(t *testing.T) {
 //go:embed a_input.txt
 var inputA string
 
-const expectedOutputA = 0
+const expectedOutputA = 1985268524462
 
 func Test_A_Input(t *testing.T) {
 	actualOutputA, actualErr := a.Run(inputA)

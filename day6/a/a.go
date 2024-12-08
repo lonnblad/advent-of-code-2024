@@ -1,8 +1,6 @@
 package a
 
 import (
-	"fmt"
-
 	"github.com/lonnblad/advent-of-code-2024/util"
 )
 
@@ -30,7 +28,6 @@ func walk(matrix [][]string, startIdx, startJdx int, step stepFunc, until string
 	idx, jdx := startIdx, startJdx
 
 	for {
-		fmt.Println(idx, jdx)
 		uniquePositions[[2]int{idx, jdx}] = true
 
 		newIdx, newJdx, turn := step(idx, jdx)
